@@ -3,7 +3,7 @@ import json
 import re
 
 # Fetch the JSON data from the API
-response = requests.get('https://fox.toxic-gang.xyz/tata/channels')
+response = requests.get('https://babel-in.xyz/babel-469c814cea6a2f626809c9b6f1f966a4/tata/channels')
 input_json = response.json()
 
 # Function to perform replacements
@@ -33,7 +33,7 @@ for channel in customized_channels:
         output_json[channel["id"]] = key_info
 
 # Save the output to a JSON file
-with open('pta_nhi.json', 'w') as outfile:
+with open('tata.json', 'w') as outfile:
     json.dump(output_json, outfile, indent=2)
 
 # Print the result
