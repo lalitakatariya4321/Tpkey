@@ -27,13 +27,13 @@ jobs:
           pip install requests
 
       - name: Run Python script
-        run: python main.py  # Ensure this script outputs pta_nhi.json
+        run: python main.py  # Ensure this script outputs tata.json
 
       - name: Commit and push changes if there are any
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add pta_nhi.json
-          git diff --staged --quiet || (git commit -m 'Update pta_nhi.json' && git push)
+          git diff --staged --quiet || (git commit -m 'Update tata.json' && git push)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
